@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+    <head>
+    <title> Formulário HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device.width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Kevyn" content="Aprendendo HTML">
+    <meta name="keywords" content="HTML, web, cps, fatec">
+
+    </head>
+</html>
+<body>
+    <div align = "center">
+    <h1 id="cadastrar">Página de Cadastro</h1>
+    <p>Preencha o cadastro para criar a conta.</p><br>
+
+    <img src="imagens/cad.jpg" alt="Imagem de chat"><br>
+
+    </div>
+
+
+    <form action="formulario.html" method="post" enctype="multipart/form-data">
+
+        <label for="name">Nome</label>
+        <input type="text" name="nome" id="name">
+
+        <label for="sobren">Sobrenome</label>
+        <input type="text" name="sobrenome" id="sobren"><br>
+
+        <label for="ap">Apelido</label>
+        <input type="text" name="apelido" id="ap"><br>
+
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" min="0" max="200" step="1">
+
+        <label for="cpf">Cpf</label>
+        <input type="text" name="cpf" id="idade" min="0" max="200" step="1" placeholder="000.000.000-00"><br>
+
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade" value="São Paulo">
+        <label for = "estado">Estado</label>
+        <select name="estados" id="estados">
+            <option value ="sp" selected> SP</option>
+            <option value ="sc"> SC</option>
+            <option value ="rj"> RJ</option>
+            <option value ="bh"> BH</option>
+            <option value ="mg"> MG</option>
+            <option value ="ce"> CE</option>
+            <option value ="outros"> Outros</option>
+        </select><br>
+
+        <label for="quatidade">Quantidade</label>
+        <input type="range" name="qtde" id="idade" min="0" max="50" step="1" oninput="valoqtde.value = qtde.value">
+        <output name="valoqtde" id="valoqtde">25</output><br>
+
+        <label for="dataehora">Data e Hora</label>
+        <input type="datetime-local" name="dataehora" id="dataehora" ><br>
+        <label for="mes">Data e Hora</label>
+        <input type="month" name="mes" id="mes" ><br>
+
+
+        <label for="tel">Telefone</label>
+        <input type="text" name="telefone" id="telefone" placeholder="(xx)xxxxxxxx"><br>
+
+        <label for="site">Url Site</label>
+        <input type="url" name="site" id="site" placeholder="http:// site"><br><br>
+
+    
+
+
+        <label for="sugestao">Sugestão</label>
+        <textarea name="sugestao" id="sugestao" rows="4" cols="30"></textarea><br>
+
+        <label for="linguagens"> Linguagens: </label>
+        <input type="checkbox" value="Java" name="linguagens">Java
+        <input type="checkbox" value="C++" name="linguagens">C++
+        <input type="checkbox" value="C#" name="linguagens">C#
+        <input type="checkbox" value="Python" name="linguagens">Python<br>
+
+        
+
+        <label for="favorito">  Area Favorita</label>
+        <input type="text" name="favorito" id="favorito" list="fav"><br>
+        <datalist id="fav">
+            <option value="Exatas">
+            <option value="Linguagens">
+            <option value="Humanas">
+            <option value="Biologas">
+            <option value="Artes">
+            <option value="Outras">
+                </option>
+                
+        </datalist>
+
+        <label for="cor">Cor</label>
+        <input type="color" name="cor"id="cor"><br>
+
+        <label for="sexo"> Sexo: </label>
+        <input type="radio" value="m" name="sexo" checked>Masculino
+        <input type="radio" value="f" name="sexo">Feminino
+        <input type="radio" value="i" name="sexo">Indefinido<br>
+
+        <label for="botao">Anexar <i>Upload</i></label>
+        <input type="file" name="botao" id="botao"><br>
+
+        <p>Dúvidas saiba mais no<a  href="http://www.google.com"> Google</a></p>
+
+        <div align ="right">
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        <a href= "login.html" value="login">Voltar ao Login</a> 
+        </div>
+
+       
+
+      
+
+
+    </form>
+
+
+
+
+</body>
